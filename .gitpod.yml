@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: wget -qO - https://nim-lang.org/choosenim/init.sh | sh -s -- -y 
+    command: export PATH=/home/gitpod/.nimble/bin:$PATH && echo "export PATH=/home/gitpod/.nimble/bin:\$PATH" >> ~/.bashrc
+vscode:
+  extensions:
+    - nimsaem.nimvscode@0.1.10:VSqRP4riQfG8727UZn1mmw==
